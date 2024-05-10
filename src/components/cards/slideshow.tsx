@@ -1,6 +1,11 @@
 import React from 'react'
 
-const Slideshow = () => {
+const Slideshow = ({props} :{
+    props: {
+        header: string,
+        subheader: string,
+    }
+}) => {
     return (
         <div className="w-full bg-green-300 h-[40rem] rounded-md flex overflow-hidden flex-col justify-between">
             <div className="w-full h-2 bg-gray-300">
@@ -8,9 +13,11 @@ const Slideshow = () => {
             </div>
             <div className="w-1/2 h-[50%] p-3 bg-red-200">
                 <p className='text-lg'>
-                World and but when it didnt work i want to be a good guess.
+                {props.header}
                 </p>
-                <p className='text-md'>sub text and should be good </p>
+                <p className='text-md'>
+                    {props.subheader}
+                </p>
             </div>
         </div>
     )
