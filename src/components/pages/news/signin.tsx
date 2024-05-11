@@ -21,8 +21,8 @@ const Signin = () => {
 
                 <button type="submit" className='w-full p-2 bg-blue-400 rounded-sm'>Login</button>
                 <div className='w-full flex justify-between items-center py-2'>
-                    <a href="/news/auth/signup" className='text-sm text-blue-900 hover:underline underline-offset-1'>No, I dont have an account</a>
-                    <a href="/news/auth/forgotpassword" className='text-sm text-blue-900 hover:underline underline-offset-1'>Forgot Password?</a>
+                    <a href="/creator/auth/signup" className='text-sm text-blue-900 hover:underline underline-offset-1'>No, I dont have an account</a>
+                    <a href="/creator/auth/forgotpassword" className='text-sm text-blue-900 hover:underline underline-offset-1'>Forgot Password?</a>
                 </div>
             </div>
 

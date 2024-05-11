@@ -31,7 +31,7 @@ const Signup = () => {
 
         <button type="submit" className='w-full p-2 bg-blue-400 rounded-sm'>Register</button>
         <div className='w-full flex justify-between items-center py-2'>
-            <a href="/news/auth/signin" className='text-sm text-blue-900 hover:underline underline-offset-1'>Yes, I have an account</a>
+            <a href="/creator/auth/signin" className='text-sm text-blue-900 hover:underline underline-offset-1'>Yes, I have an account</a>
         </div>
     </div>
 
