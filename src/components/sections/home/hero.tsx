@@ -19,17 +19,6 @@ const HeroSection = () => {
             subheader: "the subheader of the news"
         },
     ]
-    setTimeout(() => {
-        if (current < 2 && current >= 0) {
-            setCurrent(current + 1)
-        } else {
-            setCurrent(0)
-        }
-        console.log(current)
-        console.log("first: ",getIndex(1))
-        console.log("second: ", getIndex(2))
-    }, 10000)
-
     function getIndex(i: number) {
         let result: number = current + i;
         if (current < 2 && current >= 0) {
@@ -40,9 +29,16 @@ const HeroSection = () => {
         } else {
             result = -1 + i
         }
-        // console.log(result)
         return result
     }
+    setTimeout(() => {
+        if (current < 2 && current >= 0) {
+            setCurrent(current + 1)
+        } else {
+            setCurrent(0)
+        }
+    }, 10000)
+
     return (
         <section className="w-full lg:px-[15rem] lg:p-2 mt-[3.5rem]">
             <div className="w-full flex mt-1 max-lg:flex-col">
